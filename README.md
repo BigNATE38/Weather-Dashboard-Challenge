@@ -18,5 +18,5 @@ The user inputs a city into the search bar. After submitting the city, the app f
 N/A
 ## Deployment Link 
 #
-(https://bignate38.github.io/Work-Day-Scheduler-/)
-![SiteImage](assets/images/Scheduler_Pic.png)
+(https://bignate38.github.io/Weather-Dashboard-Challenge/)
+![SiteImage](assets/images/Weather-Dashboard-Shot.png)
