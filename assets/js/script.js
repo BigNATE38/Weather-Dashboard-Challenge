@@ -73,7 +73,7 @@ var theCurrentWeather = function(nameOfCity) {
             var theLatCity = response.coord.lat;
 
             fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${theLatCity}&lon=${theLonCity}&exclude=minutely,hourly,alerts&units=imperial&appid=${apiKey}`)
-                // get response from one call api and turn it into objects
+                // get response from one call api/turn it into objects
                 .then(function(response) {
                     return response.json();
                 })
@@ -81,17 +81,17 @@ var theCurrentWeather = function(nameOfCity) {
                 .then(function(response) {
                     pastSearch(nameOfCity);
 
-                    // add current weather container with border to page
+                    // add current weather container
                     var presentWeatherContain = $("#present-weather-container");
                     presentWeatherContain.addClass("current-weather-all");
 
-                    // add city name, date, and weather image to current weather section title
+                    // add city name, date, and weather image to current weather
                     var currentCityAllCool = $("#current-title");
                     var presentDay = moment().format("M/D/YYYY");
                     currentCityAllCool.text(`${nameOfCity} (${presentDay})`);
-                    var picCurrent = $("#current-weather-icon");
+                    var picCurrent = $("#current-weather-pic");
                     //console.log(picCurrent)
-                    picCurrent.addClass("current-weather-icon");
+                    picCurrent.addClass("current-weather-pic");
                     var picCode = response.current.weather[0].icon;
                     picCurrent.attr("src",`https://openweathermap.org/img/wn/${picCode}@2x.png`);
                 
