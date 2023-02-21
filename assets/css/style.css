@@ -1,1 +1,131 @@
+.the-form {
+    padding: 1em;
+    justify-content: space-between;
 
+}
+
+.search-before {
+    background-color: white;
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+    border-radius: 1px;
+    margin: 0;
+    text-align: left;
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    color: black;
+}
+
+.search-font {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.button-stuff {
+    padding-top: 2%;
+}
+
+.btn {
+    width: 100%;
+    height: 10%; 
+    justify-content: center;
+}
+
+.past-stuff-container {
+    padding: 10px;
+}
+
+.current-weather-all {
+    padding: 0 0 12px 0;
+    padding-bottom: 20%;
+}
+
+.current-city-all {
+    display: flex;
+    font-size: 40px;
+    margin-left: .5em;
+}
+
+.current-city {
+    margin: 15px 0 20px 20px;
+}
+
+.current-weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.present-temp, .present-humidity, .present-wind-speed {
+    margin: 15px 20px;
+    font-size: 20px;
+}
+
+.present-uv-index {
+    font-size: 20px;
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+.present-number-big {
+    font-size: 20px;
+    display: inline;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+.favorable {
+    background-color: green;
+}
+
+.moderate {
+    background-color: yellow;
+}
+
+.severe {
+    background-color: red;
+}
+
+
+
+.future-font {
+    font-size: 27px;
+    margin-left: 1.1em;
+}
+
+.forward-card-details {
+    width: 9em;
+    padding: 7px 0 0 7px;
+    margin: 2em;
+}
+
+.forward-date {
+    font-size: 23px;
+}
+
+.future-pic {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 15px;
+}
+
+.forward-temp, .forward-humidity {
+    font-size: 17px;
+    font-weight: 200;
+}
+
+
+.nice {
+    background-color: green;
+}
+
+.not-bad {
+    background-color: yellow;
+}
+
+.not-looking-good {
+    background-color: red;
+}

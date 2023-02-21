@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- standard bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- style sheet for save icon -->
+    <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
 
+<body class = "body">
+    <header class = "header">
+        <div class="container-fluid d-flex translate-middle bg-primary justify-content-center">
+            <h1 class="h1 text-white">Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="container-fluid">
+            <div class="row">
+                
+                <div class="col-sm-4 bg-secondary p-0">
+                    <div class="the-form">
+                        <form id="the-search-form">
+                            <div class="row m-0">
+                                <label for="city-input" class="search-font m-0 text-white">Search for a City:</label>
+                            </div>
+                            <div class="big-input">
+                                <input class="form-control mr-sm-2" type="text" id="city-input" name="city-input">
+                            </div>
+                            <div class="button-stuff">
+                                <button class="btn bg-primary search-button" type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                
+
+                    <div id="past-stuff-container" class="row m-0 past-stuff-container">
+  
+                    </div>
+                </div>
+                <section>
+                    <div id="present-weather-container" class="row d-block current-weather-all">
+                        <!-- current weather title -->
+                        <div class="current-city-all" id="current-city-all-cool">
+                            <h2 id="current-title" class="current-city d-inline"></h2>
+                            <img id="current-weather-icon" src="" alt="">
+                        </div>
+                        <!-- current weather temperature -->
+                        <p class="present-temp" id="current-temperature"></p>
+                        <!-- current weather humidity -->
+                        <p class="present-humidity" id="current-humidity"></p>
+                        <!-- current weather wind speed -->
+                        <p class="present-wind-speed" id="current-wind-speed"></p>
+                        <!-- current weather uv index -->
+                        <p class="present-uv-index" id="current-uv-index"></p>
+                        <p class="present-number-big rounded" id="current-number"></p>
+                    </div>
+
+                    <div class="row future-all d-block">
+                        <!-- 5 day forecast title-->
+                        <h2 class="future-font" id="forward-forecast-font"></h2>
+                        <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
+                            <!-- future day forecard card -->
+                            <div class="forward-card bg-primary rounded">
+                                <p class="forward-date" id="forward-date-1"></p>
+                                <img id="future-pic-1" src="" alt="">
+                                <p class="forward-temp" id="forward-temp-1"></p>
+                                <p class="forward-humidity" id="forward-humidity-1"></p>
+                            </div>
+                            <div class="forward-card bg-primary rounded">
+                                <p class="forward-date" id="forward-date-2"></p>
+                                <img id="future-pic-2" src="" alt="">
+                                <p class="forward-temp" id="forward-temp-2"></p>
+                                <p class="forward-humidity" id="forward-humidity-2"></p>
+                            </div>
+                            <div class="forward-card bg-primary rounded">
+                                <p class="forward-date" id="forward-date-3"></p>
+                                <img id="future-pic-3" src="" alt="">
+                                <p class="forward-temp" id="forward-temp-3"></p>
+                                <p class="forward-humidity" id="forward-humidity-3"></p>
+                            </div>
+                            <div class="forward-card bg-primary rounded">
+                                <p class="forward-date" id="forward-date-4"></p>
+                                <img id="future-pic-4" src="" alt="">
+                                <p class="forward-temp" id="forward-temp-4"></p>
+                                <p class="forward-humidity" id="forward-humidity-4"></p>
+                            </div>
+                            <div class="forward-card bg-primary rounded">
+                                <p class="forward-date" id="forward-date-5"></p>
+                                <img id="future-pic-5" src="" alt="">
+                                <p class="forward-temp" id="forward-temp-5"></p>
+                                <p class="forward-humidity" id="forward-humidity-5"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+        </section>   
+
+    </main>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
