@@ -86,14 +86,14 @@ var theCurrentWeather = function(nameOfCity) {
                     presentWeatherContain.addClass("current-weather-all");
 
                     // add city name, date, and weather image to current weather section title
-                    var currentCityAllCool = $("#current-city-all-cool");
+                    var currentCityAllCool = $("#current-title");
                     var presentDay = moment().format("M/D/YYYY");
                     currentCityAllCool.text(`${nameOfCity} (${presentDay})`);
                     var picCurrent = $("#current-weather-icon");
                     //console.log(picCurrent)
                     picCurrent.addClass("current-weather-icon");
                     var picCode = response.current.weather[0].icon;
-                    picCurrent.attr("src", `https://openweathermap.org/img/wn/${picCode}@2x.png`);
+                    picCurrent.attr("src",`https://openweathermap.org/img/wn/${picCode}@2x.png`);
                 
 
                     // add temperature to page

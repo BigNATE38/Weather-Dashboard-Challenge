@@ -46,16 +46,16 @@
 .current-city-all {
     display: flex;
     font-size: 40px;
-    margin-left: .5em;
 }
 
 .current-city {
     margin: 15px 0 20px 20px;
+    font-size: 50px;
 }
 
 .current-weather-icon {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
 }
 
 .present-temp, .present-humidity, .present-wind-speed {
@@ -90,16 +90,15 @@
 }
 
 
-
 .future-font {
     font-size: 27px;
-    margin-left: 1.1em;
+    margin-left: .8em;
 }
 
 .forward-card-details {
-    width: 9em;
+    width: 10em;
     padding: 7px 0 0 7px;
-    margin: 2em;
+    margin: 1.4em;
 }
 
 .forward-date {
