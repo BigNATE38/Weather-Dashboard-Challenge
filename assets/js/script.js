@@ -178,7 +178,7 @@ var fiveDayArea = function(nameOfCity) {
 
                         // add temp to forecasts 
                         var tempFuture = $("#forward-temp-" + i);
-                        tempFuture.text("Temp: " + response.daily[i].temp.day + " \u00B0");
+                        tempFuture.text("Temp: " + response.daily[i].temp.day + " \u00B0F");
 
                         // add humidity to 5 day forecast
                         var humidFuture = $("#forward-humidity-" + i);
